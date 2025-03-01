@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgrammingHero-B11A5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="bg-[#F4F7FF] min-h-screen font-poppins">
+    <header class="container pt-6">
+      <div
+        class="bg-white rounded-[15px] flex justify-between items-center px-6 py-5"
+      >
+        <a href="#url" class="flex justify-between items-center">
+          <img
+            class="max-w-[50px] mr-2"
+            src="assets/images/logo.png"
+            alt="logo"
+          />
+          <span class="text-[35px] text-primary">Dev<b>Board</b></span>
+        </a>
+        <div class="flex justify-between items-center">
+          <span
+            class="flex justify-between items-center bg-[#F4F7FF] py-3 px-5 rounded-[50px] text-[32px] font-bold mr-10"
+            ><img
+              class="max-w-[32px] mr-3"
+              src="assets/images/checkbox.png"
+              alt="checkbox"
+            /><span id="menu-task">23</span></span
+          >
+          <a
+            href="#"
+            class="w-16 h-16 rounded-full flex justify-center items-center bg-[#F4F7FF] p-2"
+            id="theme-btn"
+            ><img
+              src="assets/images/theme-btn.png"
+              alt="theme"
+              class="max-w-full max-h-full"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <section class="container py-6">
+      <div class="flex justify-between gap-6 flex-wrap">
+        <div class="flex-none w-[calc(75%-12px)] rounded-[16px] bg-white">
+          <div
+            class="flex justify-between gap-6 py-6 px-5 border-b-[0.8px] border-dashed border-[#3752fd] border-opacity-20"
+          >
+            <div
+              class="flex justify-center items-center rounded-[12px] bg-[#F4F7FF] p-5 flex-none w-[calc(25%-16px)]"
+            >
+              <span
+                class="w-16 h-16 rounded-full flex justify-center items-center bg-white p-2 mr-4"
+              >
+                <img
+                  class="max-w-full max-h-full"
+                  src="assets/images/checkbox.png"
+                  alt="checkbox"
+                />
+              </span>
+              <div>
+                <h5 class="text-[rgba(0,48,60,0.8)] font-medium">
+                  Task Assigned
+                </h5>
+                <strong
+                  class="text-[#00303C] text-[32px] font-bold"
+                  id="task-assigned"
+                  >06</strong
+                >
+              </div>
+            </div>
+            <div
+              class="flex items-center rounded-[12px] bg-gradient-to-br from-[#3752fd] via-[#6c7ffa] to-[#9ba8f8] p-5 flex-none w-[calc(50%-16px)] cursor-pointer" id="discover-something"
+            >
+              <img
+                class="max-w-[78px] mr-3"
+                src="assets/images/board.png"
+                alt="checkbox"
+              />
+              <strong class="text-[24px] font-medium text-white"
+                >Discover Something <br />
+                New Today!</strong
+              >
+            </div>
+            <div
+              class="flex justify-center items-center rounded-[12px] bg-[#F4F7FF] p-5 flex-none w-[calc(25%-16px)]"
+            >
+              <span
+                class="w-16 h-16 rounded-full flex justify-center items-center bg-white p-2 mr-2"
+              >
+                <img
+                  class="max-w-full max-h-full"
+                  src="assets/images/calender.png"
+                  alt="checkbox"
+                />
+              </span>
+              <div>
+                <h5 class="text-[#00303C] text-[22px]" id="day">Wed ,</h5>
+                <strong class="text-[#00303C] text-[22px] font-bold" id="date"
+                  >Jul 28 2025
+                </strong>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 px-5 py-6 gap-6">
+            <div class="p-5 rounded-[16px] bg-[#f4f7ff] card-box">
+              <span
+                class="text-primary bg-white py-2 px-4 rounded-[8px] inline-block"
+                >ShopEase</span
+              >
+              <h3
+                class="text-primary text-[24px] font-medium py-4 heading-text"
+              >
+                Fix Mobile Button Issue
+              </h3>
+              <div class="bg-white rounded-[8px] p-4">
+                <p
+                  class="text-secondary line-clamp-2 overflow-hidden text-ellipsis break-words"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+
+              <div
+                class="flex justify-between items-center mt-4 pt-4 border-t-[0.8px] border-dashed border-[#3752fd] border-opacity-20"
+              >
+                <div>
+                  <h6 class="text-[14px] text-[rgba(0,48,60,0.8)]">Deadline</h6>
+                  <strong class="text-[rgb(0,48,60)] font-medium"
+                    >21 March 2025</strong
+                  >
+                </div>
+                <a
+                  href="#url"
+                  class="px-6 py-3 bg-acent text-white rounded-[8px] hover:bg-[#6e81f4] transition-all duration-500 inline-block btn-complete"
+                  >Completed</a
+                >
+              </div>
+            </div>
+            <div class="p-5 rounded-[16px] bg-[#f4f7ff] card-box">
+              <span
+                class="text-primary bg-white py-2 px-4 rounded-[8px] inline-block"
+                >CloudSync</span
+              >
+              <h3
+                class="text-primary text-[24px] font-medium py-4 heading-text"
+              >
+                Add Dark Mode
+              </h3>
+              <div class="bg-white rounded-[8px] p-4">
+                <p
+                  class="text-secondary line-clamp-2 overflow-hidden text-ellipsis break-words"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+
+              <div
+                class="flex justify-between items-center mt-4 pt-4 border-t-[0.8px] border-dashed border-[#3752fd] border-opacity-20"
+              >
+                <div>
+                  <h6 class="text-[14px] text-[rgba(0,48,60,0.8)]">Deadline</h6>
+                  <strong class="text-[rgb(0,48,60)] font-medium"
+                    >21 March 2025</strong
+                  >
+                </div>
+                <a
+                  href="#url"
+                  class="px-6 py-3 bg-acent text-white rounded-[8px] hover:bg-[#6e81f4] transition-all duration-500 inline-block btn-complete"
+                  >Completed</a
+                >
+              </div>
+            </div>
+            <div class="p-5 rounded-[16px] bg-[#f4f7ff] card-box">
+              <span
+                class="text-primary bg-white py-2 px-4 rounded-[8px] inline-block"
+                >SwiftPay</span
+              >
+              <h3
+                class="text-primary text-[24px] font-medium py-4 heading-text"
+              >
+                Optimize Home page 
+              </h3>
+              <div class="bg-white rounded-[8px] p-4">
+                <p
+                  class="text-secondary line-clamp-2 overflow-hidden text-ellipsis break-words"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+
+              <div
+                class="flex justify-between items-center mt-4 pt-4 border-t-[0.8px] border-dashed border-[#3752fd] border-opacity-20"
+              >
+                <div>
+                  <h6 class="text-[14px] text-[rgba(0,48,60,0.8)]">Deadline</h6>
+                  <strong class="text-[rgb(0,48,60)] font-medium"
+                    >21 March 2025</strong
+                  >
+                </div>
+                <a
+                  href="#url"
+                  class="px-6 py-3 bg-acent text-white rounded-[8px] hover:bg-[#6e81f4] transition-all duration-500 inline-block btn-complete"
+                  >Completed</a
+                >
+              </div>
+            </div>
+            <div class="p-5 rounded-[16px] bg-[#f4f7ff] card-box">
+              <span
+                class="text-primary bg-white py-2 px-4 rounded-[8px] inline-block"
+                >Meta</span
+              >
+              <h3
+                class="text-primary text-[24px] font-medium py-4 heading-text"
+              >
+                Add new emoji 🤲
+              </h3>
+              <div class="bg-white rounded-[8px] p-4">
+                <p
+                  class="text-secondary line-clamp-2 overflow-hidden text-ellipsis break-words"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+
+              <div
+                class="flex justify-between items-center mt-4 pt-4 border-t-[0.8px] border-dashed border-[#3752fd] border-opacity-20"
+              >
+                <div>
+                  <h6 class="text-[14px] text-[rgba(0,48,60,0.8)]">Deadline</h6>
+                  <strong class="text-[rgb(0,48,60)] font-medium"
+                    >21 March 2025</strong
+                  >
+                </div>
+                <a
+                  href="#url"
+                  class="px-6 py-3 bg-acent text-white rounded-[8px] hover:bg-[#6e81f4] transition-all duration-500 inline-block btn-complete"
+                  >Completed</a
+                >
+              </div>
+            </div>
+            <div class="p-5 rounded-[16px] bg-[#f4f7ff] card-box">
+              <span
+                class="text-primary bg-white py-2 px-4 rounded-[8px] inline-block"
+                >Google LLC</span
+              >
+              <h3
+                class="text-primary text-[24px] font-medium py-4 heading-text"
+              >
+                Integrate OpenAI API
+              </h3>
+              <div class="bg-white rounded-[8px] p-4">
+                <p
+                  class="text-secondary line-clamp-2 overflow-hidden text-ellipsis break-words"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+
+              <div
+                class="flex justify-between items-center mt-4 pt-4 border-t-[0.8px] border-dashed border-[#3752fd] border-opacity-20"
+              >
+                <div>
+                  <h6 class="text-[14px] text-[rgba(0,48,60,0.8)]">Deadline</h6>
+                  <strong class="text-[rgb(0,48,60)] font-medium"
+                    >21 March 2025</strong
+                  >
+                </div>
+                <a
+                  href="#url"
+                  class="px-6 py-3 bg-acent text-white rounded-[8px] hover:bg-[#6e81f4] transition-all duration-500 inline-block btn-complete"
+                  >Completed</a
+                >
+              </div>
+            </div>
+            <div class="p-5 rounded-[16px] bg-[#f4f7ff] card-box">
+              <span
+                class="text-primary bg-white py-2 px-4 rounded-[8px] inline-block"
+                >Glassdoar</span
+              >
+              <h3
+                class="text-primary text-[24px] font-medium py-4 heading-text"
+              >
+                Improve Job searching
+              </h3>
+              <div class="bg-white rounded-[8px] p-4">
+                <p
+                  class="text-secondary line-clamp-2 overflow-hidden text-ellipsis break-words"
+                >
+                  Debug using Chrome DevTools, check for overlapping elements,
+                  and ensure onClick works properly and ensure onClick works
+                  properly
+                </p>
+              </div>
+
+              <div
+                class="flex justify-between items-center mt-4 pt-4 border-t-[0.8px] border-dashed border-[#3752fd] border-opacity-20"
+              >
+                <div>
+                  <h6 class="text-[14px] text-[rgba(0,48,60,0.8)]">Deadline</h6>
+                  <strong class="text-[rgb(0,48,60)] font-medium"
+                    >21 March 2025</strong
+                  >
+                </div>
+                <a
+                  href="#url"
+                  class="px-6 py-3 bg-acent text-white rounded-[8px] hover:bg-[#6e81f4] transition-all duration-500 inline-block btn-complete"
+                  >Completed</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-none w-[calc(25%-12px)] rounded-[16px] bg-white">
+          <div
+            class="px-5 py-6 border-b-[0.8px] border-dashed border-[#3752fd] border-opacity-20"
+          >
+            <span
+              class="flex justify-center items-center font-medium text-[20px] mb-4"
+              ><img
+                class="max-w-6 mr-4"
+                src="assets/images/activity.png"
+                alt="activity"
+              />Activity Log</span
+            >
+            <div class="text-center">
+              <a
+                href="#url"
+                class="px-6 py-3 bg-acent text-white rounded-[8px] hover:bg-[#6e81f4] transition-all duration-500 inline-block"
+                id="btn-clear"
+                >Clear History</a
+              >
+            </div>
+          </div>
+          <div class="px-5 py-6 pt-0" id="activity-content">
+            <!-- <p
+              class="p-3 rounded-[8px] bg-[#F4F7FF] text-[rgba(0,0,0,0.7)] mt-6"
+            >
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p>
+            <p
+              class="p-3 rounded-[8px] bg-[#F4F7FF] text-[rgba(0,0,0,0.7)] mt-6"
+            >
+              You have Complete The Task Add Dark Mode at 12:48:15 PM
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/tailwind.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

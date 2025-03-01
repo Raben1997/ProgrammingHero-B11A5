@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProgrammingHero-B11A5</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="bg-[#F4F7FF] min-h-screen font-poppins">
+    <header class="container pt-6">
+      <div
+        class="bg-white rounded-[15px] flex justify-between items-center px-6 py-5"
+      >
+        <a href="#url" class="flex justify-between items-center">
+          <img
+            class="max-w-[50px] mr-2"
+            src="assets/images/logo.png"
+            alt="logo"
+          />
+          <span class="text-[35px] text-primary">Dev<b>Board</b></span>
+        </a>
+        <a
+          href="#url"
+          class="px-6 py-3 bg-acent text-white rounded-[8px] hover:bg-[#6e81f4] transition-all duration-500 inline-block" id="btn-back"
+          >Back to Desk</a
+        >
+      </div>
+    </header>
+    <section class="container pb-6">
+      <h4 class="block text-center text-primary font-bold text-[30px] mt-6">
+        Blogs
+      </h4>
+      <div class="rounded-[16px] bg-white block mt-6">
+        <h6
+          class="text-primary border-b-[0.8px] border-dashed border-[#3752fd] border-opacity-20 font-bold px-4 py-3"
+        >
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h6>
+        <p class="text-secondary px-4 py-3">
+          1. document.getElementById();<br />
+          2. document.getElementsByClassName();<br />
+          3. document.getElementsByTagName();<br />
+          4. document.querySelector();<br />
+          5. document.querySelectorAll();<br />
+        </p>
+      </div>
+      <div class="rounded-[16px] bg-white block mt-6">
+        <h6
+          class="text-primary border-b-[0.8px] border-dashed border-[#3752fd] border-opacity-20 font-bold px-4 py-3"
+        >
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h6>
+        <p class="text-secondary px-4 py-3">
+          1. innerHTML - এটি ব্যবহার করে আমরা HTML ট্যাগসহ সমস্ত কনটেন্ট পাই বা
+          সেট করি ।<br />
+          2. innerText - এটি ব্যবহার করে আমরা HTML ট্যাগ ছাড়া শুধু visible
+          content পাই বা সেট করি ।<br />
+          3. textContent - এটি ব্যবহার করে আমরা HTML ট্যাগ ছাড়া hidden + visible
+          content পাই বা সেট করি ।
+        </p>
+      </div>
+      <div class="rounded-[16px] bg-white block mt-6">
+        <h6
+          class="text-primary border-b-[0.8px] border-dashed border-[#3752fd] border-opacity-20 font-bold px-4 py-3"
+        >
+          Question-3: What is event delegation in the DOM?
+        </h6>
+        <p class="text-secondary px-4 py-3">
+          Event Delegation হল এমন একটি ধরন যা Parent-এ ইভেন্ট বসিয়ে child-এর
+          ইভেন্ট ধরা যায় ।
+        </p>
+      </div>
+      <div class="rounded-[16px] bg-white block mt-6">
+        <h6
+          class="text-primary border-b-[0.8px] border-dashed border-[#3752fd] border-opacity-20 font-bold px-4 py-3"
+        >
+          Question-4: What is event bubbling in the DOM?
+        </h6>
+        <p class="text-secondary px-4 py-3">
+          যখন কোনো চাইল্ড এলিমেন্টে ইভেন্ট ঘটে, সেই ইভেন্ট ধাপে ধাপে তার
+          প্যারেন্ট, তারপর তার প্যারেন্টের প্যারেন্ট পর্যন্ত উপরের দিকে পৌঁছে
+          যায়। এই প্রক্রিয়াকে Event Bubbling বলে।
+        </p>
+      </div>
+      <div class="rounded-[16px] bg-white block mt-6">
+        <h6
+          class="text-primary border-b-[0.8px] border-dashed border-[#3752fd] border-opacity-20 font-bold px-4 py-3"
+        >
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h6>
+        <p class="text-secondary px-4 py-3">
+          1. Create :- <br />document.createElement() এটা ব্যবহার করে একটি নতুন
+          এলিমেন্ট তৈরি করা হয় ।<br /><br />
+          2. Add :- <br />document.body.appendChild() এটা ব্যবহার করে নতুন
+          এলিমেন্ট HTML-এর শেষে যোগ করা হয় ।<br /><br />
+          3. Remove :- <br />parent.removeChild() এটা ব্যবহার করে চাইল্ড
+          এলিমেন্ট মুছে ফেলা হয় ।
+        </p>
+      </div>
+    </section>
+    <script src="assets/js/tailwind.js"></script>
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>
